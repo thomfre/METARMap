@@ -22,7 +22,7 @@ except ImportError:
 # ---------------------------------------------------------------------------
 
 # NeoPixel LED Configuration
-LED_COUNT		= 50			# Number of LED pixels.
+LED_COUNT		= 4			# Number of LED pixels.
 LED_PIN			= board.D18		# GPIO pin connected to the pixels (18 is PCM).
 LED_BRIGHTNESS		= 0.5			# Float from 0.0 (min) to 1.0 (max)
 LED_ORDER		= neopixel.GRB		# Strip type and colour ordering
@@ -40,9 +40,9 @@ COLOR_LIGHTNING		= (255,255,255)		# White
 
 # ----- Blink/Fade functionality for Wind and Lightning -----
 # Do you want the METARMap to be static to just show flight conditions, or do you also want blinking/fading based on current wind conditions
-ACTIVATE_WINDCONDITION_ANIMATION = False	# Set this to False for Static or True for animated wind conditions
+ACTIVATE_WINDCONDITION_ANIMATION = True	# Set this to False for Static or True for animated wind conditions
 #Do you want the Map to Flash white for lightning in the area
-ACTIVATE_LIGHTNING_ANIMATION = False		# Set this to False for Static or True for animated Lightning
+ACTIVATE_LIGHTNING_ANIMATION = True		# Set this to False for Static or True for animated Lightning
 # Fade instead of blink
 FADE_INSTEAD_OF_BLINK	= True			# Set to False if you want blinking
 # Blinking Windspeed Threshold
@@ -61,7 +61,7 @@ DIM_TIME_START		= datetime.time(19,0)	# Time of day to run at LED_BRIGHTNESS_DIM
 LED_BRIGHTNESS_DIM	= 0.1			# Float from 0.0 (min) to 1.0 (max)
 
 USE_SUNRISE_SUNSET 	= True			# Set to True if instead of fixed times for bright/dimming, you want to use local sunrise/sunset
-LOCATION 		= "Seattle"		# Nearby city for Sunset/Sunrise timing, refer to https://astral.readthedocs.io/en/latest/#cities for list of cities supported
+LOCATION 		= "Oslo"		# Nearby city for Sunset/Sunrise timing, refer to https://astral.readthedocs.io/en/latest/#cities for list of cities supported
 
 # ----- External Display support -----
 ACTIVATE_EXTERNAL_METAR_DISPLAY = False		# Set to True if you want to display METAR conditions to a small external display
